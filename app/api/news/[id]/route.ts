@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 
-export async function GET(request: Request, { params }: { params: { id: string } }) {
+export async function GET(request: Request, { params }: any ) {
     const { id } = await params;
 
     if (!id) {
